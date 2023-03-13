@@ -1,0 +1,33 @@
+.step--phone-email {
+  width: 100%;
+}
+
+.tab-type {
+  display: flex;
+  gap: 0.5rem;
+  background-color: var(--clr-neutral-700);
+  border-radius: 0.5rem;
+  padding: 0.5em;
+  margin-bottom: 3em;
+}
+
+.btn-type {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: var(--clr-neutral-300);
+  padding: 0.375em 1.5em;
+  border-radius: 0.25rem;
+  width: 50%;
+  transition: background 0.25s ease;
+}
+
+.btn-type:is(:hover, :focus-visible) {
+  background-color: var(--clr-neutral-500);
+}
+
+.btn-type.active {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-900);
+}

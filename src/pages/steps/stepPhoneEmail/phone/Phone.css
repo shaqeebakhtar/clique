@@ -1,0 +1,49 @@
+#phone {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  padding: 0.5em 0.75em;
+  padding-left: 5.5em;
+  margin-bottom: 1.5em;
+  border-radius: 0.25rem;
+  background-color: var(--clr-neutral-700);
+  color: var(--clr-neutral-100);
+}
+
+#phone:focus-visible {
+  outline: 1.5px solid var(--clr-neutral-100);
+}
+
+#phone::placeholder {
+  color: var(--clr-neutral-300);
+}
+
+#phone::-webkit-inner-spin-button,
+#phone::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.input-label {
+  display: block;
+  color: var(--clr-neutral-300);
+  margin-bottom: 0.25em;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.country-code {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.75rem;
+}

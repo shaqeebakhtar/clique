@@ -1,0 +1,9 @@
+.authenticate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 5.5rem);
+  max-width: 28.125rem;
+  margin: 0 auto;
+}

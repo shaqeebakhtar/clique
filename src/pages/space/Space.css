@@ -1,0 +1,62 @@
+.space-details__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.btn--leave {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: hsl(var(--clr-red));
+}
+
+.joined-user {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25em 0.5em;
+  background-color: var(--clr-neutral-700);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.joined-user__avatar {
+  width: 3.75rem;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
+.joined-user__avatar img {
+  object-fit: cover;
+}
+
+.clients {
+  margin: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.btn--mic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5em;
+  background-color: var(--clr-neutral-500);
+}
+
+.btn--mic.muted {
+  background-color: hsl(var(--clr-red) / 0.25);
+}
+
+.btn--mic img {
+  width: 1.125rem;
+}
