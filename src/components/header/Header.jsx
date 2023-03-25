@@ -62,7 +62,7 @@ const Header = () => {
             </div>
             <button className="btn--logout | fw-bold" onClick={logoutUser}>
               {/* Logout */}
-              <img src="../../../public/assets/logout.svg" draggable="false" />
+              <img src="/assets/logout.svg" draggable="false" />
             </button>
           </div>
         )}

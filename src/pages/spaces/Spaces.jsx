@@ -32,7 +32,7 @@ const Spaces = () => {
             <div className="search-bar">
               <label htmlFor="search">
                 <img
-                  src="../../../public/assets/search.svg"
+                  src="/assets/search.svg"
                   draggable="false"
                 />
               </label>

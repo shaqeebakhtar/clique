@@ -26,7 +26,7 @@ const CreateSpaceModal = ({ onClose }) => {
         <div className="modal__header">
           <h3 className="fw-black fs-title-sm">Create your Space</h3>
           <button className="btn--close-modal" onClick={onClose}>
-            <img src="../../../public/assets/close.svg" />
+            <img src="/assets/close.svg" />
           </button>
         </div>
         <div className="modal__body">
@@ -45,7 +45,7 @@ const CreateSpaceModal = ({ onClose }) => {
               }
               onClick={() => setSpaceType("public")}
             >
-              <img src="../../../public/assets/globe.svg" alt="" />
+              <img src="/assets/globe.svg" alt="" />
               <p className="fw-medium fs-body-x-sm">Public</p>
             </div>
             <div
@@ -54,7 +54,7 @@ const CreateSpaceModal = ({ onClose }) => {
               }
               onClick={() => setSpaceType("private")}
             >
-              <img src="../../../public/assets/lock.svg" alt="" />
+              <img src="/assets/lock.svg" alt="" />
               <p className="fw-medium fs-body-x-sm">Private</p>
             </div>
             <div
@@ -63,7 +63,7 @@ const CreateSpaceModal = ({ onClose }) => {
               }
               onClick={() => setSpaceType("unlisted")}
             >
-              <img src="../../../public/assets/link.svg" alt="" />
+              <img src="/assets/link.svg" alt="" />
               <p className="fw-medium fs-body-x-sm">Unlisted</p>
             </div>
           </div>

@@ -60,11 +60,11 @@ const Space = () => {
               >
                 {client.muted ? (
                   <img
-                    src="../../../public/assets/microphone-slash.svg"
+                    src="/assets/microphone-slash.svg"
                     alt=""
                   />
                 ) : (
-                  <img src="../../../public/assets/microphone.svg" alt="" />
+                  <img src="/assets/microphone.svg" alt="" />
                 )}
               </button>
               <div className="joined-user__avatar">
