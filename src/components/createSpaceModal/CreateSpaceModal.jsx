@@ -14,7 +14,6 @@ const CreateSpaceModal = ({ onClose }) => {
       if (!topic) return;
       const { data } = await create({ topic, spaceType });
       navigate(`/space/${data.id}`);
-      console.log(data);
     } catch (error) {
       console.log(error.message);
     }

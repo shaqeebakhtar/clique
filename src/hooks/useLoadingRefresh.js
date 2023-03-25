@@ -10,10 +10,9 @@ export const useLoadingRefresh = () => {
   useEffect(() => {
     (async () => {
       try {
-        const { data } = await api.get("api/refresh");
+        const { data } = await api.get("/api/refresh");
         dispatch(setAuth(data));
         setLoading(false);
-        console.log("refresh");
       } catch (error) {
         console.log(error);
         setLoading(false);

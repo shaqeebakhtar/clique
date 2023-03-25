@@ -14,7 +14,6 @@ const StepOtp = () => {
   const verifyAndSubmit = async () => {
     try {
       await verifyOtp({ phone, otp, hash }).then((res) => {
-        console.log(res.data);
         dispatch(setAuth({ user: res.data.user }));
       });
     } catch (error) {
