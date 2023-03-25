@@ -8,11 +8,11 @@ import Loader from "../../../components/loader/Loader";
 import "./StepProfile.css";
 
 const StepProfile = () => {
-  const { name, username, avatar } = useSelector((state) => state.activate);
+  const { name, username } = useSelector((state) => state.activate);
 
   const [uname, setUname] = useState(username);
   const [fullName, setFullName] = useState(name);
-  const [pic, setPic] = useState("../../../../public/assets/avatar.png");
+  const [pic, setPic] = useState("/assets/avatar.png");
 
   const [loading, setLoading] = useState(false);
 
@@ -69,11 +69,7 @@ const StepProfile = () => {
           style={{ display: "none" }}
         />
         <label htmlFor="avatar-input" className="avatar-input">
-          <img
-            src="../../../../public/assets/pencil.svg"
-            alt="edit"
-            draggable="false"
-          />
+          <img src="/assets/pencil.svg" alt="edit" draggable="false" />
         </label>
       </div>
       <label className="input-label | fs-body-sm" htmlFor="username">

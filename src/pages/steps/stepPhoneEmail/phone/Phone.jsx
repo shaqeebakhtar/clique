@@ -12,8 +12,8 @@ const Phone = ({ onClick }) => {
 
   const getOtp = async () => {
     await sendOtp({ phone: phone }).then((res) => {
+      dispatch(setOtp({ phone: phone, hash: res.data.hash }));
       alert(`Your OTP is ${res.data.otp}. Valid for 5 minutes - Clique`);
-      dispatch(setOtp({ phone: res.data.phone, hash: res.data.hash }));
       onClick();
     });
   };
@@ -25,11 +25,7 @@ const Phone = ({ onClick }) => {
       </label>
       <div className="input-wrapper">
         <label htmlFor="phone" className="country-code">
-          <img
-            src="../../../../public/assets/flag.png"
-            alt="indian flag"
-            draggable="false"
-          />
+          <img src="/assets/flag.png" alt="indian flag" draggable="false" />
           <span className="fw-medium">+91</span>
         </label>
         <input
