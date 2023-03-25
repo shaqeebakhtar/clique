@@ -41,7 +41,9 @@ api.interceptors.response.use(
     if (error.response.status === 401 && originalReq && !originalReq._isRetry) {
       originalReq._isRetry = true;
       try {
-        await api.get("api/refresh");
+        await axios.get(`${import.meta.env.VITE_API_URL}api/refresh`, {
+          withCredentials: true,
+        });
         return api.request(originalReq);
       } catch (err) {
         console.log(err.message);
