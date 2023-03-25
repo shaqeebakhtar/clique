@@ -10,9 +10,9 @@ const Phone = ({ onClick }) => {
   const [phone, setPhone] = useState("");
   const dispatch = useDispatch();
 
-  const getOtp = () => {
-    sendOtp({ phone: phone }).then((res) => {
-      console.log(res.data);
+  const getOtp = async () => {
+    await sendOtp({ phone: phone }).then((res) => {
+      alert(`Your OTP is ${res.data.otp}. Valid for 5 minutes - Clique`);
       dispatch(setOtp({ phone: res.data.phone, hash: res.data.hash }));
       onClick();
     });
