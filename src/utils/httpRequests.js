@@ -32,10 +32,6 @@ export const getSpace = async (spaceId) => {
 };
 
 // interceptors
-api.interceptors.request.use((request) => {
-  console.log(request);
-  return request;
-});
 
 api.interceptors.response.use(
   (config) => {
