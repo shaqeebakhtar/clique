@@ -32,6 +32,11 @@ export const getSpace = async (spaceId) => {
 };
 
 // interceptors
+api.interceptors.request.use((request) => {
+  console.log(request);
+  return request;
+});
+
 api.interceptors.response.use(
   (config) => {
     return config;
@@ -41,7 +46,7 @@ api.interceptors.response.use(
     if (error.response.status === 401 && originalReq && !originalReq._isRetry) {
       originalReq._isRetry = true;
       try {
-        await axios.get(`${import.meta.env.VITE_API_URL}/api/refresh`, {
+        await axios.get(`${import.meta.env.VITE_API_URL}api/refresh`, {
           withCredentials: true,
         });
         return api.request(originalReq);

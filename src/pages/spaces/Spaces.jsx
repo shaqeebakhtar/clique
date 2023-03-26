@@ -52,7 +52,7 @@ const Spaces = () => {
           </div>
         </header>
         <div className="spaces-list">
-          {spaces.map((space) => (
+          {spaces?.map((space) => (
             <SpaceCard key={space.id} space={space} />
           ))}
         </div>
